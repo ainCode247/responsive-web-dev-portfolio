@@ -1,0 +1,218 @@
+.open-sans-normal{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Shared Style */
+
+.secoundery-bg{
+    background-color: #fff8f3;
+}
+.text-primary{
+    color: #fd6e0a;
+}
+
+.dark-2{
+    color: #464646;
+}
+
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    text-align: center;
+
+}
+
+.section-describtion{
+    font-size: 18px;
+    color: #757575;
+}
+.text-center{
+    text-align: center;
+
+}
+
+/* Header */
+
+.header{
+    background-image: url(/images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+/* nav bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+.nav-title{
+    font-weight:800;
+    font-size: 45px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.btn-primary{
+    border: none;
+    background-color: #FD6D0A;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 5px;
+}
+
+/* Baner styles */
+.bannar-contant{
+    max-width: 580px;
+    
+}
+
+.banner-greetings{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title{
+    font-weight: bold;
+    font-size: 85px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin: 0 35px 0 115px;
+    justify-items: center;
+}
+
+.banner-pp{
+    width: 700px;
+}
+main{
+    max-width: 1140;
+    margin: 0 auto;
+    
+}
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.about{
+    border-radius: 10px;
+    padding: 250px;
+    text-align: center;
+    
+}
+
+.item-description{
+    font-weight: 650;
+}
+.about-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sklills-container{
+    display: flex;
+    gap: 25px;
+}
+.skill{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.007);
+}
+/* Resume_Style_container */
+.resume-container{
+    display: flex;
+    gap: 24px;
+    /* justify-content: center; */
+}
+
+.experience-sub-title{
+    font-size: 20px;
+    font-weight: 610px;
+    margin-bottom: 20px;
+}
+.experience-description, .experience-sub-title{
+    color: #757575;
+}
+.resume hr{
+    margin: 30px 10px;
+
+}
+/* Fotter Design */
+
+footer{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+}
+.footer-column{
+    width: 50%;
+
+}
+
+footer input[type="text"], footer input[type="email"], footer textarea{
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+/* Try to responsive */
+
+.hide{
+    display: none;
+}
+
+
+/* Applying Media_Query */
+
+@media screen and (max-width: 576px) {
+    .sklills-container,
+    .resume-container,
+    footer,
+    .about-items
+    {
+        flex-direction: column;
+    }
+    footer,
+    .about
+    {
+        padding: 20px;
+    }
+    .footer-column
+    {
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
